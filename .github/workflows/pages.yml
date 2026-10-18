@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: '22'
       - name: Verify learning journeys
-        run: node test.cjs && node --check dist/app.js && node --check dist/data.js
+        run: node test.cjs && node --check dist/app.js && node --check dist/data.js && node --check dist/territories.js && node --check dist/globe.js
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
